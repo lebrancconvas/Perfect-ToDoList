@@ -25,9 +25,9 @@ const Homepage = () => {
 				<Form.Item label="Todo" name="todo">
 					<Input /> 
 				</Form.Item> 
-				<button type="submit"> 
+				<Button htmlType="submit" type="primary">   
 					Add Todo 
-				</button>
+				</Button>
 			</Form>
 		</div>
 	);
