@@ -1,4 +1,5 @@
 import React, {SyntheticEvent, useState} from 'react'; 
+import {Form, Input, Button} from 'antd'; 
 
 const Homepage = () => {
 	const [todo, setTodo] = useState('');  
@@ -20,12 +21,14 @@ const Homepage = () => {
 					</li>
 				))} 
 			</ol>
-			<form onSubmit={addTodo}>
-				<input type="text" placeholder="Add Task" name="Todo" onChange={e => setTodo(e.target.value)}  />  
+			<Form>   
+				<Form.Item label="Todo" name="todo">
+					<Input /> 
+				</Form.Item> 
 				<button type="submit"> 
 					Add Todo 
 				</button>
-			</form>
+			</Form>
 		</div>
 	);
 }
